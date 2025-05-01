@@ -20,6 +20,10 @@ app.use('/api', jobRoutes);
 const PORT = process.env.PORT || 8080;
 
 // Start the server
+app.get('/', (req, res) => {
+  res.send('Welcome to the Job API');
+})
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
