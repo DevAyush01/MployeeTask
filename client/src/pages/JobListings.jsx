@@ -114,7 +114,7 @@ export default function JobListings() {
             </div>
           ) : (
             <div className="p-8 text-center text-gray-500">
-              No jobs found matching your search
+              No jobs found Matched
             </div>
           )}
         </div>
