@@ -5,7 +5,7 @@ export default function SearchBar({ onSearch }) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    onSearch(location)
+    onSearch(location.trim())
   }
 
   return (
@@ -14,17 +14,18 @@ export default function SearchBar({ onSearch }) {
         <input
           type="text"
           placeholder="Search by location (e.g., Noida, OH)"
-          className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 py-2 md:px-4 md:py-2 text-sm md:text-base border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
+          aria-label="Search jobs by location"
         />
         <button
           type="submit"
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-1 rounded-md hover:bg-blue-700"
+          className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-2 py-1 md:px-4 md:py-1 text-sm md:text-base rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           Search
         </button>
       </div>
     </form>
-  )
+  );
 }
