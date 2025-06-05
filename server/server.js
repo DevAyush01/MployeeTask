@@ -17,7 +17,7 @@ dbConnect();
 app.use('/api', jobRoutes);
 
 // Set up the port
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 // Start the server
 app.get('/', (req, res) => {
