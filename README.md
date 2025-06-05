@@ -8,18 +8,18 @@ MployeeTask is a full-stack application built with **React.js** for the frontend
 - **Backend**: A RESTful API built with Node.js, Express, and MongoDB Atlas for job listings and user management.
 - **Deployed**:
   - Frontend: Hosted on **Vercel** for fast, serverless deployments.
-  - Backend: Hosted on **Railway** for easy management of Node.js services.
+  - Backend: Hosted on **Render** for easy management of Node.js services.
 
 ## Links
 
 - **Frontend** (Deployed on Vercel): https://mployee-task-delta.vercel.app/
-- **Backend** (Deployed on Railway): https://mployeetask-production.up.railway.app/
+- **Backend** (Deployed on Render): https://mployeetask-backend.onrender.com/
 
 ## Technologies Used
 
 - **Frontend**: React.js, Vite, Tailwind CSS, Axios
 - **Backend**: Node.js, Express, MongoDB, Mongoose
-- **Deployment**: Vercel (Frontend), Railway (Backend)
+- **Deployment**: Vercel (Frontend), Render (Backend)
 
 ### Running Locally
 
